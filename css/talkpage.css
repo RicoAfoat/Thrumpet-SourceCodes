@@ -1,0 +1,51 @@
+p
+{
+    background-color: rgb(129,216,207);
+    color: black;
+    margin: 1% 1% 1%;
+    padding: 1% 1% 1%;
+}
+img
+{
+    width: 15%;
+    height: 15%;
+}
+textarea
+{
+    background-attachment: fixed;
+    background-color: lightpink;
+    color: rgb(0, 33, 20);
+    border-radius: 10px;
+    /* border:20px; */
+}
+ul
+{
+    list-style-type: space-counter;
+    margin: 1% 1% 1%;
+    padding: 1% 1% 1%;
+    background-color: #009dff;
+    position:fixed;
+    height: 100%;
+    overflow: auto;
+    border-radius: 10px;
+}
+li
+{
+  	display: block;
+  	color: #000;
+    border-radius: 10px;
+}
+li.active
+{
+  	background-color: #4CAF50;
+  	color: white;
+    border-radius: 10px;
+}
+li:hover:not(.active)
+{
+  	background-color: #555;
+  	color: white;
+    margin: 1 1 1;
+    padding: 1 1 1;
+    border-radius: 10px;
+}

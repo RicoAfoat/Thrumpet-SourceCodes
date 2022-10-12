@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thrumpet</title>
+    </head>
+    <body background="./asrc/sunjunpchuazhoutu.jfif">
+        <div style="padding:60px;font-size:38px;font-weight:bold;text-align: center;">
+            Thrumpet
+        </div>
+    </body>
+    <body>
+        <button id="newServer">Connection To newServer</button>
+        <script src="./js/addServer.js"></script>
+    </body>
+    <br>
+    <br>
+    <body>
+        <script src="./js/connect.js"></script>
+        <select id="selectserver" onchange="login()">
+        <option value="">--Choose a Server--</option>
+        </select>
+        <script>
+        var objSelectNow=document.getElementById("selectserver")
+        const fso=require("fs")
+        var s=""
+        fso.readFile('config.txt','utf8',function(err,bufdata){
+            if(err){return alert(err)}
+            var data=bufdata.toString()
+            var a=data.length
+            var b=0
+            for(var i=0;i<a;i++)
+            {
+                if(data[i]=='\n')
+                {
+                    var endpoint=data.substring(b,i-1).charAt(':')
+                    var inner="<option id=\""+data.substring(b,endpoint-1)+"\">"+data.substring(b,i)+"</option>\n"
+                    objSelectNow.innerHTML+=inner
+                    b=i+1
+                }
+            }
+        })
+        </script>
+        <button onclick="login()">Login</button>
+    </body>
+</html>

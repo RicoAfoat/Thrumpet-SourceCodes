@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Add New Server</title>
+    </head>
+    <body>
+        <div style="padding:60px;font-size:38px;font-weight:bold;text-align: center;">
+            Add New Server
+        </div>
+    </body>
+    <script src="./js/saveconfig.js"></script>
+    <body>
+        <form name="Server">
+            <lable>Server Name
+                <input type="text" id="servername" value="随便取，你记得就行">
+            </lable>
+            <br>
+            <label>Server's IP(better ip4)
+                <input type="text" id="ip4add" value="xxx.xxx.xxx.xxx">
+            </label>
+            <br>
+            <label>Port                   
+                <input type="text" id="port" value="1-65000左右">
+            </label>
+            <br>
+            <button onclick="saveConfig()">Save</button>
+        </form>
+    </body>
+</html>

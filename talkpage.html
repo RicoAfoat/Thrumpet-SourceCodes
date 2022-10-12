@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/talkpage.css">
+    </head>
+    <title>低情商：画面十分简陋；高情商：复古像素风</title>
+    <body background="./asrc/sunjunpchuazhoutu.jfif" style="overflow:hidden">
+        <script src="./js/rnmmp.js"></script>
+        <ul id="userlist">
+            <li id="SYSTEMpage" class="SYSTEM" onclick="dIsplay('SYSTEM')">SYSTEM</li>
+        </ul>
+        <div id="page">
+            <div id="SYSTEM" class="dIsplaying" style="margin-left:15%;padding:1px 16px;height:70%;">
+                <p>Welcome!</p>
+                <p>尊重劳动财产 不要爆破程序 因为是demo所以完全没有防爆措施</p>
+                <p>命令"list"刷新用户页面</p>
+                <p>支持插入图片和视频，每次最好只发一个，用html格式，且请求只保证https://[地址]（是不是有解释器这种东西？）</p>
+                <p>如bilibili自带的嵌入代码就需要你动动小手改一下</p>
+                <p>输入昵称以继续，不能重名</p>
+                <!-- <iframe src="https://player.bilibili.com/player.html?aid=473767267&bvid=BV1hT411P7mP&cid=852627793&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
+                <!-- <img src="https://scpic.chinaz.net/files/pic/pic9/201311/apic2098.jpg"></img> -->
+            </div>
+        </div>
+        <div style="margin-left:15%;height: 175px;position: relative;">
+            <textarea id="usermessage" name="usermessage" rows="10" cols="48" autocomplete="off" maxlength="480" spellcheck="false"></textarea>   
+            <button onclick="cOmmit()">commit</button>
+        </div>
+    </body>
+</html>
+
+<!-- <iframe src="//player.bilibili.com/player.html?aid=473767267&bvid=BV1hT411P7mP&cid=852627793&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
